@@ -1,0 +1,1204 @@
+Category_ID	Category_Name	AP@IoU=0.5
+1	aerosol can/spray can	c	0.061
+2	air conditioner	f	0.225
+3	airplane/aeroplane	f	0.632
+4	alarm clock	f	0.102
+5	alcohol/alcoholic beverage	c	0.056
+6	alligator/gator	c	0.000
+7	almond	c	0.051
+8	ambulance	c	0.021
+9	amplifier	c	0.000
+10	anklet/ankle bracelet	c	0.240
+11	antenna/aerial/transmitting aerial	f	0.048
+12	apple	f	0.537
+13	applesauce	r	0.000
+14	apricot	r	0.000
+15	apron	f	0.251
+16	aquarium/fish tank	c	0.117
+17	arctic/arctic type of shoe/galosh/golosh/rubber/rubber type of shoe/gumshoe	r	0.000
+18	armband	c	0.042
+19	armchair	f	0.275
+20	armoire	r	0.100
+21	armor/armour	r	0.063
+22	artichoke	c	0.148
+23	trash can/garbage can/wastebin/dustbin/trash barrel/trash bin	f	0.352
+24	ashtray	c	0.196
+25	asparagus	c	0.032
+26	atomizer/atomiser/spray/sprayer/nebulizer/nebuliser	c	0.010
+27	avocado	f	0.051
+28	award/accolade	c	0.029
+29	awning	f	0.224
+30	ax/axe	r	0.030
+31	baboon	r	0.000
+32	baby buggy/baby carriage/perambulator/pram/stroller	f	0.344
+33	basketball backboard	c	0.016
+34	backpack/knapsack/packsack/rucksack/haversack	f	0.241
+35	handbag/purse/pocketbook	f	0.244
+36	suitcase/baggage/luggage	f	0.630
+37	bagel/beigel	c	0.036
+38	bagpipe	r	0.000
+39	baguet/baguette	r	0.000
+40	bait/lure	r	0.000
+41	ball	f	0.166
+42	ballet skirt/tutu	r	0.000
+43	balloon	f	0.506
+44	bamboo	c	0.008
+45	banana	f	0.559
+46	Band Aid	c	0.000
+47	bandage	c	0.011
+48	bandanna/bandana	f	0.013
+49	banjo	r	0.000
+50	banner/streamer	f	0.105
+51	barbell	r	0.000
+52	barge	r	0.000
+53	barrel/cask	f	0.244
+54	barrette	c	0.038
+55	barrow/garden cart/lawn cart/wheelbarrow	c	0.341
+56	baseball base	f	0.367
+57	baseball	f	0.565
+58	baseball bat	f	0.581
+59	baseball cap/jockey cap/golf cap	f	0.238
+60	baseball glove/baseball mitt	f	0.668
+61	basket/handbasket	f	0.297
+62	basketball	c	0.214
+63	bass horn/sousaphone/tuba	r	0.000
+64	bat/bat animal	c	0.000
+65	bath mat	f	0.481
+66	bath towel	f	0.227
+67	bathrobe	c	0.022
+68	bathtub/bathing tub	f	0.658
+69	batter/batter food	r	0.004
+70	battery	c	0.023
+71	beachball	r	0.036
+72	bead	c	0.008
+73	bean curd/tofu	c	0.106
+74	beanbag	c	0.355
+75	beanie/beany	f	0.088
+76	bear	f	0.666
+77	bed	f	0.440
+78	bedpan	r	0.000
+79	bedspread/bedcover/bed covering/counterpane/spread	f	0.083
+80	cow	f	0.784
+81	beef/beef food/boeuf/boeuf food	f	0.077
+82	beeper/pager	r	0.000
+83	beer bottle	f	0.236
+84	beer can	c	0.053
+85	beetle	r	0.000
+86	bell	f	0.123
+87	bell pepper/capsicum	f	0.096
+88	belt	f	0.355
+89	belt buckle	f	0.030
+90	bench	f	0.262
+91	beret	c	0.000
+92	bib	c	0.206
+93	Bible	r	0.000
+94	bicycle/bike/bike bicycle	f	0.417
+95	visor/vizor	f	0.164
+96	billboard	f	0.129
+97	binder/ring-binder	c	0.052
+98	binoculars/field glasses/opera glasses	c	0.042
+99	bird	f	0.527
+100	birdfeeder	c	0.151
+101	birdbath	c	0.061
+102	birdcage	c	0.213
+103	birdhouse	c	0.000
+104	birthday cake	f	0.330
+105	birthday card	r	0.000
+106	pirate flag	r	0.000
+107	black sheep	c	0.108
+108	blackberry	c	0.239
+109	blackboard/chalkboard	f	0.451
+110	blanket	f	0.187
+111	blazer/sport jacket/sport coat/sports jacket/sports coat	c	0.005
+112	blender/liquidizer/liquidiser	f	0.576
+113	blimp	r	0.000
+114	blinker/flasher	f	0.045
+115	blouse	f	0.066
+116	blueberry	f	0.129
+117	gameboard	r	0.064
+118	boat/ship/ship boat	f	0.400
+119	bob/bobber/bobfloat	r	0.000
+120	bobbin/spool/reel	c	0.013
+121	bobby pin/hairgrip	c	0.000
+122	boiled egg/coddled egg	c	0.040
+123	bolo tie/bolo/bola tie/bola	r	0.000
+124	deadbolt	c	0.044
+125	bolt	f	0.054
+126	bonnet	r	0.000
+127	book	f	0.267
+128	bookcase	c	0.065
+129	booklet/brochure/leaflet/pamphlet	c	0.008
+130	bookmark/bookmarker	r	0.000
+131	boom microphone/microphone boom	r	0.000
+132	boot	f	0.329
+133	bottle	f	0.238
+134	bottle opener	c	0.000
+135	bouquet	c	0.224
+136	bow/bow weapon	r	0.000
+137	bow/bow decorative ribbons	f	0.183
+138	bow-tie/bowtie	f	0.414
+139	bowl	f	0.277
+140	pipe bowl	r	0.000
+141	bowler hat/bowler/derby hat/derby/plug hat	c	0.006
+142	bowling ball	r	0.000
+143	box	f	0.128
+144	boxing glove	r	0.000
+145	suspenders	c	0.105
+146	bracelet/bangle	f	0.246
+147	brass plaque	r	0.000
+148	brassiere/bra/bandeau	c	0.047
+149	bread-bin/breadbox	c	0.125
+150	bread	f	0.210
+151	breechcloth/breechclout/loincloth	r	0.000
+152	bridal gown/wedding gown/wedding dress	f	0.286
+153	briefcase	c	0.081
+154	broccoli	f	0.541
+155	broach	r	0.000
+156	broom	c	0.345
+157	brownie	c	0.006
+158	brussels sprouts	c	0.055
+159	bubble gum	r	0.000
+160	bucket/pail	f	0.309
+161	horse buggy	r	0.091
+162	horned cow	c	0.122
+163	bulldog	c	0.000
+164	bulldozer/dozer	r	0.015
+165	bullet train	c	0.305
+166	bulletin board/notice board	c	0.054
+167	bulletproof vest	r	0.200
+168	bullhorn/megaphone	c	0.013
+169	bun/roll	f	0.206
+170	bunk bed	c	0.127
+171	buoy	f	0.266
+172	burrito	r	0.019
+173	bus/bus vehicle/autobus/charabanc/double-decker/motorbus/motorcoach	f	0.528
+174	business card	c	0.052
+175	butter	f	0.040
+176	butterfly	c	0.007
+177	button	f	0.220
+178	cab/cab taxi/taxi/taxicab	f	0.050
+179	cabana	r	0.000
+180	cabin car/caboose	c	0.015
+181	cabinet	f	0.272
+182	locker/storage locker	r	0.000
+183	cake	f	0.204
+184	calculator	c	0.174
+185	calendar	f	0.048
+186	calf	c	0.075
+187	camcorder	c	0.002
+188	camel	c	0.026
+189	camera	f	0.203
+190	camera lens	c	0.036
+191	camper/camper vehicle/camping bus/motor home	c	0.120
+192	can/tin can	f	0.129
+193	can opener/tin opener	c	0.106
+194	candle/candlestick	f	0.294
+195	candle holder	f	0.103
+196	candy bar	r	0.000
+197	candy cane	c	0.000
+198	walking cane	c	0.348
+199	canister/canister	c	0.097
+200	canoe	c	0.099
+201	cantaloup/cantaloupe	c	0.005
+202	canteen	r	0.000
+203	cap/cap headwear	f	0.001
+204	bottle cap/cap/cap container lid	f	0.240
+205	cape	c	0.030
+206	cappuccino/coffee cappuccino	c	0.127
+207	car/car automobile/auto/auto automobile/automobile	f	0.149
+208	railcar/railcar part of a train/railway car/railway car part of a train/railroad car/railroad car part of a train	f	0.091
+209	elevator car	r	0.000
+210	car battery/automobile battery	r	0.000
+211	identity card	c	0.010
+212	card	c	0.093
+213	cardigan	c	0.000
+214	cargo ship/cargo vessel	r	0.036
+215	carnation	r	0.000
+216	horse carriage	c	0.324
+217	carrot	f	0.485
+218	tote bag	f	0.014
+219	cart	c	0.015
+220	carton	c	0.032
+221	cash register/register/register for cash transactions	c	0.017
+222	casserole	r	0.069
+223	cassette	r	0.000
+224	cast/plaster cast/plaster bandage	c	0.010
+225	cat	f	0.508
+226	cauliflower	f	0.315
+227	cayenne/cayenne spice/cayenne pepper/cayenne pepper spice/red pepper/red pepper spice	c	0.041
+228	CD player	c	0.077
+229	celery	f	0.148
+230	cellular telephone/cellular phone/cellphone/mobile phone/smart phone	f	0.498
+231	chain mail/ring mail/chain armor/chain armour/ring armor/ring armour	r	0.000
+232	chair	f	0.116
+233	chaise longue/chaise/daybed	r	0.000
+234	chalice	r	0.000
+235	chandelier	f	0.450
+236	chap	r	0.101
+237	checkbook/chequebook	r	0.000
+238	checkerboard	r	0.000
+239	cherry	c	0.028
+240	chessboard	r	0.000
+241	chicken/chicken animal	c	0.127
+242	chickpea/garbanzo	c	0.029
+243	chili/chili vegetable/chili pepper/chili pepper vegetable/chilli/chilli vegetable/chilly/chilly vegetable/chile/chile vegetable	c	0.000
+244	chime/gong	r	0.000
+245	chinaware	r	0.000
+246	crisp/crisp potato chip/potato chip	c	0.066
+247	poker chip	r	0.000
+248	chocolate bar	c	0.747
+249	chocolate cake	c	0.065
+250	chocolate milk	r	0.000
+251	chocolate mousse	r	0.000
+252	choker/collar/neckband	f	0.131
+253	chopping board/cutting board/chopping block	f	0.329
+254	chopstick	f	0.194
+255	Christmas tree	f	0.348
+256	slide	c	0.137
+257	cider/cyder	r	0.000
+258	cigar box	r	0.000
+259	cigarette	f	0.055
+260	cigarette case/cigarette pack	c	0.041
+261	cistern/water tank	f	0.335
+262	clarinet	r	0.000
+263	clasp	c	0.000
+264	cleansing agent/cleanser/cleaner	c	0.046
+265	cleat/cleat for securing rope	r	0.000
+266	clementine	r	0.002
+267	clip	c	0.005
+268	clipboard	c	0.000
+269	clippers/clippers for plants	r	0.000
+270	cloak	r	0.000
+271	clock/timepiece/timekeeper	f	0.387
+272	clock tower	f	0.584
+273	clothes hamper/laundry basket/clothes basket	c	0.055
+274	clothespin/clothes peg	c	0.179
+275	clutch bag	r	0.000
+276	coaster	f	0.295
+277	coat	f	0.080
+278	coat hanger/clothes hanger/dress hanger	c	0.066
+279	coatrack/hatrack	c	0.016
+280	cock/rooster	c	0.388
+281	cockroach	r	0.000
+282	cocoa/cocoa beverage/hot chocolate/hot chocolate beverage/drinking chocolate	r	0.027
+283	coconut/cocoanut	c	0.029
+284	coffee maker/coffee machine	f	0.503
+285	coffee table/cocktail table	f	0.381
+286	coffeepot	c	0.004
+287	coil	r	0.000
+288	coin	c	0.447
+289	colander/cullender	c	0.000
+290	coleslaw/slaw	c	0.042
+291	coloring material/colouring material	r	0.000
+292	combination lock	r	0.000
+293	pacifier/teething ring	c	0.290
+294	comic book	r	0.000
+295	compass	r	0.000
+296	computer keyboard/keyboard/keyboard computer	f	0.656
+297	condiment	f	0.050
+298	cone/traffic cone	f	0.569
+299	control/controller	f	0.266
+300	convertible/convertible automobile	r	0.000
+301	sofa bed	r	0.000
+302	cooker	r	0.000
+303	cookie/cooky/biscuit/biscuit cookie	f	0.255
+304	cooking utensil	r	0.000
+305	cooler/cooler for food/ice chest	f	0.093
+306	cork/cork bottle plug/bottle cork	f	0.092
+307	corkboard	r	0.000
+308	corkscrew/bottle screw	c	0.000
+309	edible corn/corn/maize	f	0.096
+310	cornbread	r	0.000
+311	cornet/horn/trumpet	c	0.011
+312	cornice/valance/valance board/pelmet	c	0.077
+313	cornmeal	r	0.000
+314	corset/girdle	c	0.023
+315	costume	c	0.000
+316	cougar/puma/catamount/mountain lion/panther	r	0.011
+317	coverall	r	0.000
+318	cowbell	c	0.250
+319	cowboy hat/ten-gallon hat	f	0.229
+320	crab/crab animal	c	0.000
+321	crabmeat	r	0.000
+322	cracker	c	0.071
+323	crape/crepe/French pancake	r	0.016
+324	crate	f	0.146
+325	crayon/wax crayon	c	0.240
+326	cream pitcher	r	0.000
+327	crescent roll/croissant	c	0.094
+328	crib/cot	c	0.496
+329	crock pot/earthenware jar	c	0.155
+330	crossbar	f	0.020
+331	crouton	r	0.005
+332	crow	c	0.228
+333	crowbar/wrecking bar/pry bar	r	0.000
+334	crown	c	0.017
+335	crucifix	c	0.077
+336	cruise ship/cruise liner	c	0.660
+337	police cruiser/patrol car/police car/squad car	c	0.162
+338	crumb	f	0.073
+339	crutch	c	0.120
+340	cub/cub animal	c	0.107
+341	cube/square block	c	0.587
+342	cucumber/cuke	f	0.146
+343	cufflink	c	0.011
+344	cup	f	0.173
+345	trophy cup	c	0.200
+346	cupboard/closet	f	0.054
+347	cupcake	f	0.455
+348	hair curler/hair roller/hair crimper	r	0.000
+349	curling iron	r	0.000
+350	curtain/drapery	f	0.219
+351	cushion	f	0.230
+352	cylinder	r	0.000
+353	cymbal	r	0.000
+354	dagger	r	0.000
+355	dalmatian	r	0.000
+356	dartboard	c	0.500
+357	date/date fruit	r	0.485
+358	deck chair/beach chair	f	0.312
+359	deer/cervid	c	0.143
+360	dental floss/floss	c	0.143
+361	desk	f	0.292
+362	detergent	r	0.000
+363	diaper	c	0.380
+364	diary/journal	r	0.000
+365	die/dice	r	0.002
+366	dinghy/dory/rowboat	r	0.014
+367	dining table	f	0.031
+368	tux/tuxedo	r	0.000
+369	dish	f	0.025
+370	dish antenna	c	0.146
+371	dishrag/dishcloth	c	0.000
+372	dishtowel/tea towel	f	0.096
+373	dishwasher/dishwashing machine	f	0.598
+374	dishwasher detergent/dishwashing detergent/dishwashing liquid/dishsoap	r	0.000
+375	dispenser	f	0.104
+376	diving board	r	0.000
+377	Dixie cup/paper cup	f	0.024
+378	dog	f	0.438
+379	dog collar	f	0.175
+380	doll	f	0.043
+381	dollar/dollar bill/one dollar bill	r	0.000
+382	dollhouse/doll's house	r	0.000
+383	dolphin	c	0.000
+384	domestic ass/donkey	c	0.001
+385	doorknob/doorhandle	f	0.137
+386	doormat/welcome mat	c	0.220
+387	doughnut/donut	f	0.705
+388	dove	r	0.000
+389	dragonfly	r	0.000
+390	drawer	f	0.443
+391	underdrawers/boxers/boxershorts	c	0.032
+392	dress/frock	f	0.273
+393	dress hat/high hat/opera hat/silk hat/top hat	c	0.092
+394	dress suit	f	0.071
+395	dresser	f	0.282
+396	drill	c	0.540
+397	drone	r	0.000
+398	dropper/eye dropper	r	0.000
+399	drum/drum musical instrument	c	0.159
+400	drumstick	r	0.112
+401	duck	f	0.304
+402	duckling	c	0.000
+403	duct tape	c	0.000
+404	duffel bag/duffle bag/duffel/duffle	f	0.059
+405	dumbbell	r	0.000
+406	dumpster	c	0.024
+407	dustpan	r	0.000
+408	eagle	c	0.048
+409	earphone/earpiece/headphone	f	0.180
+410	earplug	r	0.000
+411	earring	f	0.198
+412	easel	c	0.109
+413	eclair	r	0.000
+414	eel	r	0.000
+415	egg/eggs	f	0.173
+416	egg roll/spring roll	r	0.001
+417	egg yolk/yolk/yolk egg	c	0.215
+418	eggbeater/eggwhisk	c	0.085
+419	eggplant/aubergine	c	0.004
+420	electric chair	r	0.000
+421	refrigerator	f	0.771
+422	elephant	f	0.903
+423	elk/moose	c	0.001
+424	envelope	c	0.026
+425	eraser	c	0.210
+426	escargot	r	0.000
+427	eyepatch	r	0.000
+428	falcon	r	0.056
+429	fan	f	0.508
+430	faucet/spigot/tap	f	0.400
+431	fedora	r	0.000
+432	ferret	r	0.034
+433	Ferris wheel	c	0.284
+434	ferry/ferryboat	c	0.032
+435	fig/fig fruit	r	0.000
+436	fighter jet/fighter aircraft/attack aircraft	c	0.159
+437	figurine	f	0.070
+438	file cabinet/filing cabinet	c	0.039
+439	file/file tool	r	0.000
+440	fire alarm/smoke alarm	f	0.232
+441	fire engine/fire truck	f	0.721
+442	fire extinguisher/extinguisher	f	0.540
+443	fire hose	c	0.083
+444	fireplace	f	0.395
+445	fireplug/fire hydrant/hydrant	f	0.860
+446	first-aid kit	r	0.000
+447	fish	f	0.009
+448	fish/fish food	c	0.072
+449	fishbowl/goldfish bowl	r	0.033
+450	fishing rod/fishing pole	c	0.098
+451	flag	f	0.247
+452	flagpole/flagstaff	f	0.084
+453	flamingo	c	0.003
+454	flannel	c	0.000
+455	flap	c	0.001
+456	flash/flashbulb	r	0.025
+457	flashlight/torch	c	0.006
+458	fleece	r	0.000
+459	flip-flop/flip-flop sandal	f	0.179
+460	flipper/flipper footwear/fin/fin footwear	c	0.143
+461	flower arrangement/floral arrangement	f	0.253
+462	flute glass/champagne flute	c	0.055
+463	foal	c	0.133
+464	folding chair	c	0.010
+465	food processor	c	0.143
+466	football/football American	c	0.053
+467	football helmet	r	0.000
+468	footstool/footrest	c	0.183
+469	fork	f	0.403
+470	forklift	c	0.115
+471	freight car	c	0.015
+472	French toast	c	0.101
+473	freshener/air freshener	c	0.079
+474	frisbee	f	0.881
+475	frog/toad/toad frog	c	0.000
+476	fruit juice	c	0.000
+477	frying pan/frypan/skillet	f	0.058
+478	fudge	r	0.000
+479	funnel	r	0.126
+480	futon	r	0.027
+481	gag/muzzle	r	0.000
+482	garbage	r	0.005
+483	garbage truck	c	0.042
+484	garden hose	c	0.039
+485	gargle/mouthwash	c	0.030
+486	gargoyle	r	0.004
+487	garlic/ail	c	0.067
+488	gasmask/respirator/gas helmet	r	0.111
+489	gazelle	c	0.324
+490	gelatin/jelly	c	0.000
+491	gemstone	r	0.000
+492	generator	r	0.000
+493	giant panda/panda/panda bear	c	0.064
+494	gift wrap	c	0.071
+495	ginger/gingerroot	c	0.023
+496	giraffe	f	0.875
+497	cincture/sash/waistband/waistcloth	c	0.003
+498	glass/glass drink container/drinking glass	f	0.337
+499	globe	c	0.191
+500	glove	f	0.184
+501	goat	c	0.121
+502	goggles	f	0.518
+503	goldfish	r	0.000
+504	golf club/golf-club	c	0.000
+505	golfcart	c	0.224
+506	gondola/gondola boat	r	0.000
+507	goose	c	0.128
+508	gorilla	r	0.000
+509	gourd	r	0.000
+510	grape	f	0.146
+511	grater	c	0.159
+512	gravestone/headstone/tombstone	c	0.315
+513	gravy boat/gravy holder	r	0.000
+514	green bean	f	0.085
+515	green onion/spring onion/scallion	f	0.160
+516	griddle	r	0.000
+517	grill/grille/grillwork/radiator grille	f	0.050
+518	grits/hominy grits	r	0.000
+519	grizzly/grizzly bear	c	0.105
+520	grocery bag	c	0.066
+521	guitar	f	0.198
+522	gull/seagull	c	0.097
+523	gun	c	0.068
+524	hairbrush	f	0.148
+525	hairnet	c	0.057
+526	hairpin	c	0.001
+527	halter top	r	0.000
+528	ham/jambon/gammon	f	0.016
+529	hamburger/beefburger/burger	c	0.002
+530	hammer	c	0.001
+531	hammock	c	0.129
+532	hamper	r	0.037
+533	hamster	c	0.000
+534	hair dryer	f	0.180
+535	hand glass/hand mirror	r	0.000
+536	hand towel/face towel	f	0.112
+537	handcart/pushcart/hand truck	c	0.169
+538	handcuff	r	0.000
+539	handkerchief	c	0.200
+540	handle/grip/handgrip	f	0.072
+541	handsaw/carpenter's saw	r	0.000
+542	hardback book/hardcover book	r	0.000
+543	harmonium/organ/organ musical instrument/reed organ/reed organ musical instrument	r	0.000
+544	hat	f	0.064
+545	hatbox	r	0.000
+546	veil	c	0.328
+547	headband	f	0.283
+548	headboard	f	0.459
+549	headlight/headlamp	f	0.133
+550	headscarf	c	0.020
+551	headset	r	0.007
+552	headstall/headstall for horses/headpiece/headpiece for horses	c	0.002
+553	heart	c	0.003
+554	heater/warmer	c	0.086
+555	helicopter	c	0.287
+556	helmet	f	0.192
+557	heron	r	0.282
+558	highchair/feeding chair	c	0.097
+559	hinge	f	0.144
+560	hippopotamus	r	0.150
+561	hockey stick	r	0.000
+562	hog/pig	c	0.069
+563	home plate/home plate baseball/home base/home base baseball	f	0.353
+564	honey	c	0.208
+565	fume hood/exhaust hood	f	0.192
+566	hook	f	0.007
+567	hookah/narghile/nargileh/sheesha/shisha/water pipe	r	0.000
+568	hornet	r	0.000
+569	horse	f	0.709
+570	hose/hosepipe	f	0.014
+571	hot-air balloon	r	0.000
+572	hotplate	r	0.091
+573	hot sauce	c	0.095
+574	hourglass	r	0.000
+575	houseboat	r	0.000
+576	hummingbird	c	0.111
+577	hummus/humus/hommos/hoummos/humous	r	0.000
+578	polar bear	f	0.784
+579	icecream	c	0.140
+580	popsicle	r	0.000
+581	ice maker	c	0.011
+582	ice pack/ice bag	r	0.000
+583	ice skate	r	0.000
+584	igniter/ignitor/lighter	c	0.058
+585	inhaler/inhalator	r	0.000
+586	iPod	f	0.528
+587	iron/iron for clothing/smoothing iron/smoothing iron for clothing	c	0.000
+588	ironing board	c	0.033
+589	jacket	f	0.084
+590	jam	c	0.000
+591	jar	f	0.184
+592	jean/blue jean/denim	f	0.101
+593	jeep/landrover	c	0.009
+594	jelly bean/jelly egg	r	0.000
+595	jersey/T-shirt/tee shirt	f	0.099
+596	jet plane/jet-propelled plane	c	0.047
+597	jewel/gem/precious stone	r	0.000
+598	jewelry/jewellery	c	0.000
+599	joystick	r	0.006
+600	jumpsuit	c	0.006
+601	kayak	c	0.202
+602	keg	r	0.000
+603	kennel/doghouse	r	0.000
+604	kettle/boiler	c	0.153
+605	key	f	0.196
+606	keycard	r	0.000
+607	kilt	c	0.000
+608	kimono	c	0.000
+609	kitchen sink	f	0.406
+610	kitchen table	r	0.010
+611	kite	f	0.578
+612	kitten/kitty	c	0.071
+613	kiwi fruit	c	0.022
+614	knee pad	f	0.252
+615	knife	f	0.363
+616	knitting needle	r	0.000
+617	knob	f	0.365
+618	knocker/knocker on a door/doorknocker	r	0.101
+619	koala/koala bear	r	0.012
+620	lab coat/laboratory coat	r	0.013
+621	ladder	f	0.047
+622	ladle	c	0.197
+623	ladybug/ladybeetle/ladybird beetle	c	0.003
+624	lamb/lamb animal	f	0.111
+625	lamb-chop/lambchop	r	0.072
+626	lamp	f	0.247
+627	lamppost	f	0.051
+628	lampshade	f	0.485
+629	lantern	c	0.034
+630	lanyard/laniard	f	0.117
+631	laptop computer/notebook computer	f	0.582
+632	lasagna/lasagne	r	0.000
+633	latch	f	0.045
+634	lawn mower	r	0.018
+635	leather	r	0.000
+636	legging/legging clothing/leging/leging clothing/leg covering	c	0.049
+637	Lego/Lego set	c	0.000
+638	legume	r	0.104
+639	lemon	f	0.123
+640	lemonade	r	0.000
+641	lettuce	f	0.108
+642	license plate/numberplate	f	0.163
+643	life buoy/lifesaver/life belt/life ring	f	0.189
+644	life jacket/life vest	f	0.267
+645	lightbulb	f	0.076
+646	lightning rod/lightning conductor	r	0.000
+647	lime	f	0.079
+648	limousine	r	0.050
+649	lion	c	0.007
+650	lip balm	c	0.056
+651	liquor/spirits/hard liquor/liqueur/cordial	r	0.000
+652	lizard	c	0.002
+653	log	f	0.171
+654	lollipop	c	0.040
+655	speaker/speaker stereo equipment	f	0.451
+656	loveseat	c	0.112
+657	machine gun	r	0.172
+658	magazine	f	0.067
+659	magnet	f	0.311
+660	mail slot	c	0.300
+661	mailbox/mailbox at home/letter box/letter box at home	f	0.083
+662	mallard	r	0.000
+663	mallet	r	0.056
+664	mammoth	r	0.000
+665	manatee	r	0.000
+666	mandarin orange	c	0.076
+667	manager/through	c	0.034
+668	manhole	f	0.198
+669	map	f	0.037
+670	marker	f	0.129
+671	martini	r	1.000
+672	mascot	r	0.000
+673	mashed potato	c	0.104
+674	masher	r	0.000
+675	mask/facemask	f	0.351
+676	mast	f	0.130
+677	mat/mat gym equipment/gym mat	c	0.000
+678	matchbox	r	0.050
+679	mattress	f	0.120
+680	measuring cup	c	0.017
+681	measuring stick/ruler/ruler measuring stick/measuring rod	c	0.351
+682	meatball	c	0.536
+683	medicine	c	0.016
+684	melon	c	0.003
+685	microphone	f	0.220
+686	microscope	r	0.084
+687	microwave oven	f	0.800
+688	milestone/milepost	r	0.000
+689	milk	f	0.081
+690	milk can	r	0.000
+691	milkshake	r	0.000
+692	minivan	f	0.097
+693	mint candy	r	0.080
+694	mirror	f	0.167
+695	mitten	c	0.043
+696	mixer/mixer kitchen tool/stand mixer	c	0.199
+697	money	c	0.055
+698	monitor/monitor computer equipment	f	0.556
+699	monkey	c	0.062
+700	motor	f	0.100
+701	motor scooter/scooter	f	0.151
+702	motor vehicle/automotive vehicle	r	0.000
+703	motorcycle	f	0.462
+704	mound/mound baseball/pitcher's mound	f	0.508
+705	mouse/mouse computer equipment/computer mouse	f	0.745
+706	mousepad	f	0.457
+707	muffin	c	0.092
+708	mug	f	0.335
+709	mushroom	f	0.186
+710	music stool/piano stool	r	0.000
+711	musical instrument/instrument/instrument musical	c	0.000
+712	nailfile	r	0.000
+713	napkin/table napkin/serviette	f	0.231
+714	neckerchief	r	0.000
+715	necklace	f	0.417
+716	necktie/tie/tie necktie	f	0.449
+717	needle	c	0.260
+718	nest	c	0.031
+719	newspaper/paper/paper newspaper	f	0.044
+720	newsstand	c	0.226
+721	nightshirt/nightwear/sleepwear/nightclothes	c	0.006
+722	nosebag/nosebag for animals/feedbag	r	0.000
+723	noseband/noseband for animals/nosepiece/nosepiece for animals	c	0.029
+724	notebook	f	0.053
+725	notepad	c	0.013
+726	nut	f	0.006
+727	nutcracker	r	0.000
+728	oar	f	0.128
+729	octopus/octopus food	r	0.000
+730	octopus/octopus animal	r	0.000
+731	oil lamp/kerosene lamp/kerosine lamp	c	0.083
+732	olive oil	c	0.024
+733	omelet/omelette	r	0.260
+734	onion	f	0.094
+735	orange/orange fruit	f	0.481
+736	orange juice	c	0.091
+737	ostrich	c	1.000
+738	ottoman/pouf/pouffe/hassock	f	0.292
+739	oven	f	0.207
+740	overalls/overalls clothing	c	0.062
+741	owl	c	0.041
+742	packet	c	0.045
+743	inkpad/inking pad/stamp pad	r	0.000
+744	pad	c	0.066
+745	paddle/boat paddle	f	0.316
+746	padlock	c	0.017
+747	paintbrush	c	0.015
+748	painting	f	0.171
+749	pajamas/pyjamas	f	0.094
+750	palette/pallet	c	0.011
+751	pan/pan for cooking/cooking pan	f	0.055
+752	pan/pan metal container	r	0.000
+753	pancake	c	0.046
+754	pantyhose	r	0.003
+755	papaya	r	0.018
+756	paper plate	f	0.151
+757	paper towel	f	0.375
+758	paperback book/paper-back book/softback book/soft-cover book	r	0.000
+759	paperweight	r	0.000
+760	parachute	c	0.008
+761	parakeet/parrakeet/parroket/paraquet/paroquet/parroquet	c	0.300
+762	parasail/parasail sports	c	0.259
+763	parasol/sunshade	c	0.140
+764	parchment	r	0.000
+765	parka/anorak	c	0.014
+766	parking meter	f	0.592
+767	parrot	c	0.219
+768	passenger car/passenger car part of a train/coach/coach part of a train	c	0.024
+769	passenger ship	r	0.000
+770	passport	c	0.038
+771	pastry	f	0.159
+772	patty/patty food	r	0.000
+773	pea/pea food	c	0.242
+774	peach	c	0.022
+775	peanut butter	c	0.050
+776	pear	f	0.129
+777	peeler/peeler tool for fruit and vegetables	c	0.000
+778	wooden leg/pegleg	r	0.000
+779	pegboard	r	0.000
+780	pelican	c	0.172
+781	pen	f	0.090
+782	pencil	f	0.174
+783	pencil box/pencil case	r	0.000
+784	pencil sharpener	r	0.000
+785	pendulum	r	0.000
+786	penguin	c	0.019
+787	pennant	r	0.000
+788	penny/penny coin	r	0.000
+789	pepper/peppercorn	f	0.019
+790	pepper mill/pepper grinder	c	0.160
+791	perfume	c	0.064
+792	persimmon	r	0.000
+793	person/baby/child/boy/girl/man/woman/human	f	0.015
+794	pet	c	0.013
+795	pew/pew church bench/church bench	c	0.120
+796	phonebook/telephone book/telephone directory	r	0.000
+797	phonograph record/phonograph recording/record/record phonograph recording	c	0.038
+798	piano	f	0.372
+799	pickle	f	0.147
+800	pickup truck	f	0.210
+801	pie	c	0.056
+802	pigeon	c	0.174
+803	piggy bank/penny bank	r	0.000
+804	pillow	f	0.370
+805	pin/pin non jewelry	r	0.005
+806	pineapple	f	0.217
+807	pinecone	c	0.092
+808	ping-pong ball	r	0.000
+809	pinwheel	r	0.000
+810	tobacco pipe	r	0.000
+811	pipe/piping	f	0.080
+812	pistol/handgun	r	0.000
+813	pita/pita bread/pocket bread	c	0.000
+814	pitcher/pitcher vessel for liquid/ewer	f	0.203
+815	pitchfork	r	0.000
+816	pizza	f	0.593
+817	place mat	f	0.147
+818	plate	f	0.157
+819	platter	c	0.001
+820	playpen	r	0.000
+821	pliers/plyers	c	0.055
+822	plow/plow farm equipment/plough/plough farm equipment	r	0.168
+823	plume	r	0.000
+824	pocket watch	r	0.000
+825	pocketknife	c	0.023
+826	poker/poker fire stirring tool/stove poker/fire hook	c	0.129
+827	pole/post	f	0.029
+828	polo shirt/sport shirt	f	0.057
+829	poncho	r	0.000
+830	pony	c	0.085
+831	pool table/billiard table/snooker table	r	0.500
+832	pop/pop soda/soda/soda pop/tonic/soft drink	f	0.066
+833	postbox/postbox public/mailbox/mailbox public	c	0.171
+834	postcard/postal card/mailing-card	c	0.000
+835	poster/placard	f	0.144
+836	pot	f	0.271
+837	flowerpot	f	0.361
+838	potato	f	0.103
+839	potholder	c	0.033
+840	pottery/clayware	c	0.001
+841	pouch	c	0.013
+842	power shovel/excavator/digger	c	0.000
+843	prawn/shrimp	c	0.161
+844	pretzel	c	0.000
+845	printer/printing machine	f	0.451
+846	projectile/projectile weapon/missile	c	0.134
+847	projector	c	0.450
+848	propeller/propellor	f	0.299
+849	prune	r	0.000
+850	pudding	r	0.000
+851	puffer/puffer fish/pufferfish/blowfish/globefish	r	0.000
+852	puffin	r	0.103
+853	pug-dog	r	0.000
+854	pumpkin	c	0.257
+855	puncher	r	0.000
+856	puppet/marionette	r	0.000
+857	puppy	c	0.022
+858	quesadilla	r	0.000
+859	quiche	r	0.000
+860	quilt/comforter	f	0.102
+861	rabbit	c	0.002
+862	race car/racing car	r	0.000
+863	racket/racquet	c	0.085
+864	radar	r	0.000
+865	radiator	f	0.337
+866	radio receiver/radio set/radio/tuner/tuner radio	c	0.170
+867	radish/daikon	c	0.063
+868	raft	c	0.132
+869	rag doll	r	0.000
+870	raincoat/waterproof jacket	c	0.102
+871	ram/ram animal	c	0.176
+872	raspberry	c	0.327
+873	rat	r	0.505
+874	razorblade	c	0.001
+875	reamer/reamer juicer/juicer/juice reamer	c	0.013
+876	rearview mirror	f	0.062
+877	receipt	c	0.223
+878	recliner/reclining chair/lounger/lounger chair	c	0.090
+879	record player/phonograph/phonograph record player/turntable	c	0.562
+880	reflector	f	0.085
+881	remote control	f	0.470
+882	rhinoceros	c	0.104
+883	rib/rib food	r	0.000
+884	rifle	c	0.000
+885	ring	f	0.276
+886	river boat	r	0.000
+887	road map	r	0.000
+888	robe	c	0.002
+889	rocking chair	c	0.131
+890	rodent	r	0.000
+891	roller skate	r	0.029
+892	Rollerblade	r	0.944
+893	rolling pin	c	0.249
+894	root beer	r	0.000
+895	router/router computer equipment	c	0.012
+896	rubber band/elastic band	f	0.088
+897	runner/runner carpet	c	0.008
+898	plastic bag/paper bag	f	0.126
+899	saddle/saddle on an animal	f	0.157
+900	saddle blanket/saddlecloth/horse blanket	f	0.214
+901	saddlebag	c	0.150
+902	safety pin	r	0.000
+903	sail	f	0.241
+904	salad	f	0.198
+905	salad plate/salad bowl	r	0.000
+906	salami	c	0.000
+907	salmon/salmon fish	c	0.000
+908	salmon/salmon food	r	0.000
+909	salsa	c	0.000
+910	saltshaker	f	0.251
+911	sandal/sandal type of shoe	f	0.255
+912	sandwich	f	0.332
+913	satchel	r	0.000
+914	saucepan	r	0.007
+915	saucer	f	0.320
+916	sausage	f	0.121
+917	sawhorse/sawbuck	r	0.000
+918	saxophone	r	0.000
+919	scale/scale measuring instrument	f	0.093
+920	scarecrow/strawman	r	0.000
+921	scarf	f	0.123
+922	school bus	c	0.349
+923	scissors	f	0.603
+924	scoreboard	f	0.161
+925	scraper	r	0.000
+926	screwdriver	c	0.034
+927	scrubbing brush	f	0.224
+928	sculpture	c	0.096
+929	seabird/seafowl	c	0.016
+930	seahorse	c	0.851
+931	seaplane/hydroplane	r	0.000
+932	seashell	c	0.000
+933	sewing machine	c	0.043
+934	shaker	c	0.022
+935	shampoo	c	0.205
+936	shark	c	0.000
+937	sharpener	r	0.000
+938	Sharpie	r	0.000
+939	shaver/shaver electric/electric shaver/electric razor	r	0.029
+940	shaving cream/shaving soap	c	0.010
+941	shawl	r	0.000
+942	shears	r	0.260
+943	sheep	f	0.602
+944	shepherd dog/sheepdog	r	0.000
+945	sherbert/sherbet	r	0.000
+946	shield	c	0.046
+947	shirt	f	0.028
+948	shoe/sneaker/sneaker type of shoe/tennis shoe	f	0.086
+949	shopping bag	f	0.046
+950	shopping cart	c	0.192
+951	short pants/shorts/shorts clothing/trunks/trunks clothing	f	0.173
+952	shot glass	r	0.000
+953	shoulder bag	f	0.030
+954	shovel	c	0.004
+955	shower head	f	0.256
+956	shower cap	r	0.000
+957	shower curtain	f	0.516
+958	shredder/shredder for paper	r	0.000
+959	signboard	f	0.127
+960	silo	c	0.381
+961	sink	f	0.527
+962	skateboard	f	0.553
+963	skewer	c	0.091
+964	ski	f	0.425
+965	ski boot	f	0.402
+966	ski parka/ski jacket	f	0.112
+967	ski pole	f	0.410
+968	skirt	f	0.272
+969	skullcap	r	0.000
+970	sled/sledge/sleigh	c	0.045
+971	sleeping bag	c	0.048
+972	sling/sling bandage/triangular bandage	r	0.000
+973	slipper/slipper footwear/carpet slipper/carpet slipper footwear	c	0.023
+974	smoothie	r	0.008
+975	snake/serpent	r	0.000
+976	snowboard	f	0.644
+977	snowman	c	0.040
+978	snowmobile	c	0.652
+979	soap	f	0.217
+980	soccer ball	f	0.748
+981	sock	f	0.268
+982	sofa/couch/lounge	f	0.567
+983	softball	r	0.038
+984	solar array/solar battery/solar panel	c	0.188
+985	sombrero	r	0.368
+986	soup	f	0.285
+987	soup bowl	r	0.000
+988	soupspoon	c	0.071
+989	sour cream/soured cream	c	0.131
+990	soya milk/soybean milk/soymilk	r	0.000
+991	space shuttle	r	0.126
+992	sparkler/sparkler fireworks	r	0.446
+993	spatula	f	0.209
+994	spear/lance	r	0.000
+995	spectacles/specs/eyeglasses/glasses	f	0.190
+996	spice rack	c	0.285
+997	spider	c	0.000
+998	crawfish/crayfish	r	0.000
+999	sponge	c	0.159
+1000	spoon	f	0.343
+1001	sportswear/athletic wear/activewear	c	0.001
+1002	spotlight	c	0.076
+1003	squid/squid food/calamari/calamary	r	0.000
+1004	squirrel	c	0.004
+1005	stagecoach	r	0.000
+1006	stapler/stapler stapling machine	c	0.159
+1007	starfish/sea star	c	0.048
+1008	statue/statue sculpture	f	0.289
+1009	steak/steak food	c	0.166
+1010	steak knife	r	0.000
+1011	steering wheel	f	0.158
+1012	stepladder	r	0.003
+1013	step stool	c	0.003
+1014	stereo/stereo sound system	c	0.131
+1015	stew	r	0.000
+1016	stirrer	r	0.004
+1017	stirrup	f	0.174
+1018	stool	f	0.459
+1019	stop sign	f	0.652
+1020	brake light	f	0.042
+1021	stove/kitchen stove/range/range kitchen appliance/kitchen range/cooking stove	f	0.374
+1022	strainer	c	0.053
+1023	strap	f	0.013
+1024	straw/straw for drinking/drinking straw	f	0.238
+1025	strawberry	f	0.424
+1026	street sign	f	0.180
+1027	streetlight/street lamp	f	0.079
+1028	string cheese	r	0.000
+1029	stylus	r	0.000
+1030	subwoofer	r	0.337
+1031	sugar bowl	r	0.000
+1032	sugarcane/sugarcane plant	r	0.000
+1033	suit/suit clothing	f	0.075
+1034	sunflower	c	0.060
+1035	sunglasses	f	0.154
+1036	sunhat	c	0.093
+1037	surfboard	f	0.517
+1038	sushi	c	0.126
+1039	mop	c	0.137
+1040	sweat pants	c	0.004
+1041	sweatband	c	0.088
+1042	sweater	f	0.080
+1043	sweatshirt	f	0.054
+1044	sweet potato	c	0.053
+1045	swimsuit/swimwear/bathing suit/swimming costume/bathing costume/swimming trunks/bathing trunks	f	0.170
+1046	sword	c	0.016
+1047	syringe	r	0.000
+1048	Tabasco sauce	r	0.000
+1049	table-tennis table/ping-pong table	r	0.000
+1050	table	f	0.057
+1051	table lamp	c	0.012
+1052	tablecloth	f	0.322
+1053	tachometer	r	0.000
+1054	taco	r	0.000
+1055	tag	f	0.120
+1056	taillight/rear light	f	0.147
+1057	tambourine	r	0.000
+1058	army tank/armored combat vehicle/armoured combat vehicle	r	0.000
+1059	tank/tank storage vessel/storage tank	f	0.022
+1060	tank top/tank top clothing	f	0.230
+1061	tape/tape sticky cloth or paper	f	0.012
+1062	tape measure/measuring tape	c	0.005
+1063	tapestry	c	0.042
+1064	tarp	f	0.102
+1065	tartan/plaid	c	0.000
+1066	tassel	c	0.014
+1067	tea bag	c	0.009
+1068	teacup	c	0.054
+1069	teakettle	c	0.156
+1070	teapot	f	0.079
+1071	teddy bear	f	0.563
+1072	telephone/phone/telephone set	f	0.334
+1073	telephone booth/phone booth/call box/telephone box/telephone kiosk	c	0.264
+1074	telephone pole/telegraph pole/telegraph post	f	0.184
+1075	telephoto lens/zoom lens	r	0.000
+1076	television camera/tv camera	c	0.130
+1077	television set/tv/tv set	f	0.726
+1078	tennis ball	f	0.643
+1079	tennis racket	f	0.566
+1080	tequila	r	0.000
+1081	thermometer	c	0.085
+1082	thermos bottle	c	0.142
+1083	thermostat	f	0.251
+1084	thimble	r	0.000
+1085	thread/yarn	c	0.074
+1086	thumbtack/drawing pin/pushpin	c	0.005
+1087	tiara	c	0.080
+1088	tiger	c	0.028
+1089	tights/tights clothing/leotards	c	0.008
+1090	timer/stopwatch	c	0.160
+1091	tinfoil	f	0.221
+1092	tinsel	c	0.018
+1093	tissue paper	f	0.012
+1094	toast/toast food	c	0.066
+1095	toaster	f	0.467
+1096	toaster oven	f	0.185
+1097	toilet	f	0.499
+1098	toilet tissue/toilet paper/bathroom tissue	f	0.551
+1099	tomato	f	0.317
+1100	tongs	f	0.022
+1101	toolbox	c	0.009
+1102	toothbrush	f	0.473
+1103	toothpaste	f	0.211
+1104	toothpick	f	0.079
+1105	cover	f	0.008
+1106	tortilla	c	0.029
+1107	tow truck	c	0.017
+1108	towel	f	0.134
+1109	towel rack/towel rail/towel bar	f	0.251
+1110	toy	f	0.111
+1111	tractor/tractor farm equipment	c	0.262
+1112	traffic light	f	0.433
+1113	dirt bike	c	0.169
+1114	trailer truck/tractor trailer/trucking rig/articulated lorry/semi truck	f	0.160
+1115	train/train railroad vehicle/railroad train	f	0.467
+1116	trampoline	r	0.017
+1117	tray	f	0.107
+1118	trench coat	r	0.000
+1119	triangle/triangle musical instrument	r	0.000
+1120	tricycle	c	0.037
+1121	tripod	f	0.425
+1122	trousers/pants/pants clothing	f	0.047
+1123	truck	f	0.160
+1124	truffle/truffle chocolate/chocolate truffle	r	0.000
+1125	trunk	c	0.119
+1126	vat	r	0.000
+1127	turban	c	0.003
+1128	turkey/turkey food	c	0.000
+1129	turnip	r	0.250
+1130	turtle	c	0.002
+1131	turtleneck/turtleneck clothing/polo-neck	c	0.000
+1132	typewriter	c	0.025
+1133	umbrella	f	0.347
+1134	underwear/underclothes/underclothing/underpants	f	0.024
+1135	unicycle	r	0.000
+1136	urinal	f	0.487
+1137	urn	c	0.021
+1138	vacuum cleaner	c	0.075
+1139	vase	f	0.595
+1140	vending machine	c	0.015
+1141	vent/blowhole/air vent	f	0.144
+1142	vest/waistcoat	f	0.109
+1143	videotape	c	0.000
+1144	vinegar	r	0.000
+1145	violin/fiddle	r	0.000
+1146	vodka	r	0.000
+1147	volleyball	c	0.162
+1148	vulture	r	0.008
+1149	waffle	c	0.136
+1150	waffle iron	r	0.000
+1151	wagon	c	0.042
+1152	wagon wheel	c	0.124
+1153	walking stick	c	0.032
+1154	wall clock	c	0.130
+1155	wall socket/wall plug/electric outlet/electrical outlet/outlet/electric receptacle	f	0.367
+1156	wallet/billfold	f	0.251
+1157	walrus	r	0.000
+1158	wardrobe	r	0.000
+1159	washbasin/basin/basin for washing/washbowl/washstand/handbasin	r	0.108
+1160	automatic washer/washing machine	c	0.503
+1161	watch/wristwatch	f	0.263
+1162	water bottle	f	0.209
+1163	water cooler	c	0.252
+1164	water faucet/water tap/tap/tap water faucet	c	0.058
+1165	water heater/hot-water heater	r	0.000
+1166	water jug	c	0.016
+1167	water gun/squirt gun	r	0.000
+1168	water scooter/sea scooter/jet ski	c	0.000
+1169	water ski	c	0.743
+1170	water tower	c	0.158
+1171	watering can	c	0.072
+1172	watermelon	f	0.046
+1173	weathervane/vane/vane weathervane/wind vane	f	0.324
+1174	webcam	c	0.156
+1175	wedding cake/bridecake	c	0.331
+1176	wedding ring/wedding band	c	0.003
+1177	wet suit	f	0.679
+1178	wheel	f	0.067
+1179	wheelchair	c	0.313
+1180	whipped cream	c	0.201
+1181	whistle	c	0.000
+1182	wig	c	0.065
+1183	wind chime	c	0.000
+1184	windmill	c	0.029
+1185	window box/window box for plants	c	0.102
+1186	windshield wiper/windscreen wiper/wiper/wiper for windshield or screen	f	0.212
+1187	windsock/air sock/air-sleeve/wind sleeve/wind cone	c	0.583
+1188	wine bottle	f	0.403
+1189	wine bucket/wine cooler	c	0.203
+1190	wineglass	f	0.457
+1191	blinder/blinder for horses	f	0.228
+1192	wok	c	0.031
+1193	wolf	r	0.000
+1194	wooden spoon	c	0.070
+1195	wreath	c	0.234
+1196	wrench/spanner	c	0.003
+1197	wristband	f	0.060
+1198	wristlet/wrist band	f	0.197
+1199	yacht	c	0.000
+1200	yogurt/yoghurt/yoghourt	c	0.018
+1201	yoke/yoke animal equipment	c	0.000
+1202	zebra	f	0.874
+1203	zucchini/courgette	c	0.105
