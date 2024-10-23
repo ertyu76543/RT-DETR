@@ -1,27 +1,25 @@
 """
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
 
-COCO dataset which returns image_id for evaluation.
-Mostly copy-paste from https://github.com/pytorch/vision/blob/13b35ff/references/detection/coco_utils.py
+Lvis dataset which returns image_id for evaluation.
 """
 
 import torch
 import torch.utils.data
 import numpy as np
 import os.path
-
+import ast
 import torchvision
 torchvision.disable_beta_transforms_warning()
 
+from collections import defaultdict
 from torchvision import datapoints
-
+from longtail import IRFS
 from PIL import Image
 
 from pycocotools import mask as coco_mask
 
 from src.core import register
-
-# from .coco import custom_CocoDetection
 
 __all__ = ['CocoDetection']
 
@@ -31,19 +29,20 @@ class CocoDetection(torchvision.datasets.CocoDetection):
     __inject__ = ['transforms']
     __share__ = ['remap_mscoco_category']
     
-    def __init__(self, img_folder, ann_file, transforms, return_masks, remap_mscoco_category=False, resample=False):
-        # super(CocoDetection, self).__init__(img_folder, ann_file, resample=resample)
+    def __init__(self, img_folder, ann_file, transforms, return_masks, remap_mscoco_category=False, resample=False, t=None):
         super(CocoDetection, self).__init__(img_folder, ann_file)
         if resample:
-            # self.ids를 복제하여 irfs를 나타냄 => 복제된 이미지가 ids의 갯수로 들어감
-            id_list = []
-
-            # Open and read the file line by line
-            with open('replicated_ri_values.txt', 'r') as file:
-                for line in file:
-                    # Strip any extra whitespace or newline characters and add to the list
-                    line_value = line.strip()
-                    id_list.append(int(line_value))
+            irfs = IRFS(self.coco, t)
+            
+            # f_ic, f_bc 값 계산
+            f_ic, f_bc = irfs.calculate_f_ic_and_f_bc()
+            
+            # r_c 값 계산
+            r_c_values = irfs.calculate_r_c(f_ic, f_bc)
+            
+            # r_i 값 계산
+            id_list = irfs.calculate_r_i(r_c_values)
+                
             self.ids = sorted(id_list)
         else:
             pass
@@ -174,90 +173,6 @@ class ConvertCocoPolysToMask(object):
         target["size"] = torch.as_tensor([int(w), int(h)])
     
         return image, target
-
-
-msco53co_category2name = {
-    1: 'person',
-    2: 'bicycle',
-    3: 'car',
-    4: 'motorcycle',
-    5: 'airplane',
-    6: 'bus',
-    7: 'train',
-    8: 'truck',
-    9: 'boat',
-    10: 'traffic light',
-    11: 'fire hydrant',
-    13: 'stop sign',
-    14: 'parking meter',
-    15: 'bench',
-    16: 'bird',
-    17: 'cat',
-    18: 'dog',
-    19: 'horse',
-    20: 'sheep',
-    21: 'cow',
-    22: 'elephant',
-    23: 'bear',
-    24: 'zebra',
-    25: 'giraffe',
-    27: 'backpack',
-    28: 'umbrella',
-    31: 'handbag',
-    32: 'tie',
-    33: 'suitcase',
-    34: 'frisbee',
-    35: 'skis',
-    36: 'snowboard',
-    37: 'sports ball',
-    38: 'kite',
-    39: 'baseball bat',
-    40: 'baseball glove',
-    41: 'skateboard',
-    42: 'surfboard',
-    43: 'tennis racket',
-    44: 'bottle',
-    46: 'wine glass',
-    47: 'cup',
-    48: 'fork',
-    49: 'knife',
-    50: 'spoon',
-    51: 'bowl',
-    52: 'banana',
-    53: 'apple',
-    54: 'sandwich',
-    55: 'orange',
-    56: 'broccoli',
-    57: 'carrot',
-    58: 'hot dog',
-    59: 'pizza',
-    60: 'donut',
-    61: 'cake',
-    62: 'chair',
-    63: 'couch',
-    64: 'potted plant',
-    65: 'bed',
-    67: 'dining table',
-    70: 'toilet',
-    72: 'tv',
-    73: 'laptop',
-    74: 'mouse',
-    75: 'remote',
-    76: 'keyboard',
-    77: 'cell phone',
-    78: 'microwave',
-    79: 'oven',
-    80: 'toaster',
-    81: 'sink',
-    82: 'refrigerator',
-    84: 'book',
-    85: 'clock',
-    86: 'vase',
-    87: 'scissors',
-    88: 'teddy bear',
-    89: 'hair drier',
-    90: 'toothbrush'
-}
 
 
 mscoco_category2name = {

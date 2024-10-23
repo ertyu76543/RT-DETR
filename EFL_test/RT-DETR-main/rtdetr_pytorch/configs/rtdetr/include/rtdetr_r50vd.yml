@@ -67,13 +67,13 @@ RTDETRPostProcessor:
 SetCriterion:
   weight_dict: 
     default: {loss_bce: 1, loss_bbox: 5, loss_giou: 2,}
-    auxiliary: {loss_efl: 1, loss_bbox: 5, loss_giou: 2,}
+    efl: {loss_efl: 1, loss_bbox: 5, loss_giou: 2,}
   losses: 
     default: ['bce', 'boxes', ]
-    auxiliary: ['efl', 'boxes', ] 
+    efl: ['efl', 'boxes', ] 
   alpha: 0.75
   gamma: 2.0
-  use_auxiliary: False
+  use_efl: False
 
   matcher:
     type: HungarianMatcher

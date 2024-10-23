@@ -11,41 +11,30 @@ import torch.nn as nn
 import torch.nn.functional as F 
 import torchvision
 
+from longtail import EqualizedFocalLoss 
+
 # from torchvision.ops import box_convert, generalized_box_iou
 from .box_ops import box_cxcywh_to_xyxy, box_iou, generalized_box_iou
 
 from src.misc.dist import get_world_size, is_dist_available_and_initialized
 from src.core import register
-import src.solver.det_engine as det
+
 
 
 @register
 class SetCriterion(nn.Module):
-    """ This class computes the loss for DETR.
-    The process happens in two steps:
-        1) we compute hungarian assignment between ground truth boxes and the outputs of the model
-        2) we supervise each pair of matched ground-truth / prediction (supervise class and box)
-    """
     __share__ = ['num_classes', ]
     __inject__ = ['matcher', ]
 
-    def __init__(self, matcher, weight_dict, losses, alpha=0.2, gamma=2.0, eos_coef=1e-4, num_classes=1203, use_auxiliary=False):
-        """ Create the criterion.
-        Parameters:
-            num_classes: number of object categories, omitting the special no-object category
-            matcher: module able to compute a matching between targets and proposals
-            weight_dict: dict containing as key the names of the losses and as values their relative weight.
-            eos_coef: relative classification weight applied to the no-object category
-            losses: list of all the losses to be applied. See get_loss for list of available losses.
-        """
+    def __init__(self, matcher, weight_dict, losses, alpha=0.2, gamma=2.0, eos_coef=1e-4, num_classes=1203, use_efl=False):
         super().__init__()
         self.num_classes = num_classes
         self.matcher = matcher
         
-        if use_auxiliary:
-            self.losses = losses['auxiliary']
-            self.weight_dict = weight_dict['auxiliary']
-            print(f"Using auxiliary losses: {self.losses}")
+        if use_efl:
+            self.losses = losses['efl']
+            self.weight_dict = weight_dict['efl']
+            print(f"Using efl losses: {self.losses}")
         else:
             self.losses = losses['default']
             self.weight_dict = weight_dict['default']
@@ -157,12 +146,12 @@ class SetCriterion(nn.Module):
 
         target = F.one_hot(target_classes, num_classes=self.num_classes+1)[..., :-1]
         loss = self.efl(src_logits, target * 1.)
+        
         loss = loss.mean(1).sum() * src_logits.shape[1] / num_boxes
         
         return {'loss_efl': loss}
     
     
-
     @torch.no_grad()
     def loss_cardinality(self, outputs, targets, indices, num_boxes):
         """ Compute the cardinality error, ie the absolute error in the number of predicted non-empty boxes
@@ -342,119 +331,6 @@ class SetCriterion(nn.Module):
         
         return dn_match_indices
 
-
-class EqualizedFocalLoss(nn.Module):
-    def __init__(
-        self,
-        name="equalized_focal_loss",
-        loss_weight=1.0,
-        ignore_index=-1,
-        num_classes=1203,
-        focal_gamma=2.0,
-        focal_alpha=0.25,
-        scale_factor=4.0,
-        fpn_levels=4,
-    ):
-        super().__init__()
-
-        # cfg for focal loss
-        self.focal_gamma = focal_gamma
-        self.focal_alpha = focal_alpha
-
-        # ignore bg class and ignore idx
-        self.num_classes = num_classes
-        self.ignore_index = ignore_index
-
-        # cfg for efl loss
-        self.scale_factor = scale_factor
-        # initial variables
-        self.register_buffer("pos_grad", torch.zeros(self.num_classes))
-        self.register_buffer("neg_grad", torch.zeros(self.num_classes))
-        self.register_buffer("pos_neg", torch.ones(self.num_classes))
-
-        self.collect_grad_count = 0 
-
-        # grad collect
-        self.grad_buffer = []
-        # self.fpn_levels = fpn_levels
-
-    def forward(self, input, target, normalizer=None):
-        self.input = input.reshape(-1, self.num_classes)
-        self.target = target.reshape(-1, self.num_classes)
-
-        pred = torch.sigmoid(self.input)
-        pred_t = pred * self.target + (1 - pred) * (1 - self.target)  # targets(one-hot encoding)이므로 실제 클래스에 대해서 예측 확률을 취하고, 나머지 클래스에 대해서 예측확률을 취함
-
-        map_val = 1 - self.pos_neg.detach()
-
-        dy_gamma = self.focal_gamma + self.scale_factor * map_val  # r_b + s (1- g^j)
-        # dy_gamma = dy_gamma.to(input.device)
-
-        # focusing factor
-        ff = dy_gamma
-        # weighting factor
-        wf = ff / self.focal_gamma  # r_b + s(1-g^j)/r_b
-
-        # ce_loss
-        # ce_loss = -torch.log(pred_t)
-        # ce_loss = -torch.log(torch.clamp(pred_t, min=1e-10))
-        ce_loss = F.binary_cross_entropy_with_logits(self.input, self.target, reduction="none")
-        cls_loss = ce_loss * torch.pow((1 - pred_t), ff.detach()) * wf.detach()  # EFL(p_t) = -a*(1-p_t)^(r^j)*log(p_t)
-
-        # to avoid an OOM error
-        # torch.cuda.empty_cache()
-
-        # if self.focal_alpha >= 0:
-        #     alpha_t = self.focal_alpha * self.target + (1 - self.focal_alpha) * (1 - self.target)
-        #     cls_loss = alpha_t * cls_loss
-
-        self.collect_grad(self.target.detach())
-
-        return cls_loss
-
-    def collect_grad(self, target):
-        # prob = input.sigmoid()
-        # grad = target * (prob - 1) + (1 - target) * prob
-        # self.grad_buffer.append(grad)
-        grad_in = det.grad_in
-         
-
-         
-        if grad_in is not None and self.collect_grad_count % 13 < 7:
-            self.collect_grad_count += 1
-            
-            grad_in = torch.tensor(grad_in)
-            grads = grad_in.reshape(-1, self.num_classes)
-            
-            grad = torch.abs(grads)
-            
-            # grad = torch.cat(self.grad_buffer[::-1], dim=1).reshape(-1, self.num_classes)
-            pos_grad = torch.sum(grad * target, dim=0)
-            neg_grad = torch.sum(grad * (1 - target), dim=0)
-
-
-            # allreduce(pos_grad)  # 분산 학습에서 각 프로세스가 계산한 그라디언트를 합산하여 모델의 파라미터 업데이트에 사용
-            # allreduce(neg_grad)
-
-            if self.pos_grad.device != pos_grad.device:
-                self.pos_grad = self.pos_grad.to(pos_grad.device)
-
-            if self.neg_grad.device != neg_grad.device:
-                self.neg_grad = self.neg_grad.to(neg_grad.device)
-
-            self.pos_grad += pos_grad
-            self.neg_grad += neg_grad
-            self.pos_neg = torch.clamp(self.pos_grad / (self.neg_grad + 1e-10), min=0, max=1)
-            
-
-            # print("##", self.pos_neg)
-            # sys.exit(0)
-            self.grad_buffer = []
-        elif grad_in is not None and self.collect_grad_count % 13 >= 7:
-            self.collect_grad_count += 1
-            pass
-        else:
-            pass
 
 
 @torch.no_grad()

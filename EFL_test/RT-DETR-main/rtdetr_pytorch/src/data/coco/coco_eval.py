@@ -75,7 +75,8 @@ class CocoEvaluator(object):
             
             
             ap_per_cat = coco_eval.summarize_per_category(iouThr=0.5, areaRng='all', maxDets=1000, freq_group_idx=None)
-            
+
+
             filename = 'category_AP.txt'
 
             with open(filename, 'w') as f:
@@ -288,6 +289,7 @@ def evaluate(self):
 #################################################################
 
 
+# COCOeval API를 이용하여 LVIS에 대한 Category별 mAP 나타냄
 class custom_COCOeval(COCOeval):
     def __init__(self, cocoGt=None, cocoDt=None, iouType='segm'):
         super().__init__(cocoGt, cocoDt, iouType)
@@ -334,8 +336,6 @@ class custom_COCOeval(COCOeval):
             d = [d['bbox'] for d in dt]
         else:
             raise Exception('unknown iouType for iou computation')
-
-        # 여기에서 iscrowd를 모두 0으로 설정합니다.
         iscrowd = [int(0) for _ in gt]
 
         # IoU 계산
@@ -343,9 +343,6 @@ class custom_COCOeval(COCOeval):
         return ious
 
     def evaluateImg(self, imgId, catId, aRng, maxDet):
-        '''
-        단일 이미지와 카테고리에 대한 평가를 수행합니다.
-        '''
         p = self.params
         if p.useCats:
             gt = self._gts[imgId, catId]
@@ -361,17 +358,14 @@ class custom_COCOeval(COCOeval):
                 g['_ignore'] = 1
             else:
                 g['_ignore'] = 0
-
-        # dt를 높은 점수 순으로 정렬하고, gt는 ignore가 아닌 것부터 정렬
+                
         gtind = np.argsort([g['_ignore'] for g in gt], kind='mergesort')
         gt = [gt[i] for i in gtind]
         dtind = np.argsort([-d['score'] for d in dt], kind='mergesort')
         dt = [dt[i] for i in dtind[0:maxDet]]
-
-        # 여기에서 iscrowd를 모두 0으로 설정합니다.
         iscrowd = [int(0) for _ in gt]
 
-        # 미리 계산된 IoU를 로드합니다.
+
         ious = self.ious[imgId, catId][:, gtind] if len(self.ious[imgId, catId]) > 0 else self.ious[imgId, catId]
 
         T = len(p.iouThrs)
@@ -400,10 +394,10 @@ class custom_COCOeval(COCOeval):
                     dtIg[tind, dind] = gtIg[m]
                     dtm[tind, dind] = gt[m]['id']
                     gtm[tind, m] = d['id']
-        # 면적 범위를 벗어난 미매칭 탐지를 무시로 설정
+      
         a = np.array([d['area'] < aRng[0] or d['area'] > aRng[1] for d in dt]).reshape((1, len(dt)))
         dtIg = np.logical_or(dtIg, np.logical_and(dtm == 0, np.repeat(a, T, 0)))
-        # 결과를 반환
+
         return {
             'image_id': imgId,
             'category_id': catId,
@@ -440,7 +434,6 @@ class custom_COCOeval(COCOeval):
     
         s = precision[t, :, :, aind, mind]
 
-        # 카테고리 ID를 빈도 그룹 레이블에 매핑
         cat_id_to_freq_label = {}
         for freq_idx, group in enumerate(self.freq_groups):
             freq_label = self.params.img_count_lbl[freq_idx]

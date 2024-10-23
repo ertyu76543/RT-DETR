@@ -14,9 +14,9 @@ from typing import Iterable
 import torch
 import torch.amp 
 
-from src.data import CocoEvaluator, LvisEvaluator
+from src.data import CocoEvaluator
 from src.misc import (MetricLogger, SmoothedValue, reduce_dict)
-# from ..zoo.rtdetr.rtdetr_criterion import EqualizedFocalLoss
+
 
 # grad_in 값을 저장할 변수 초기화
 grad_in = None
@@ -187,7 +187,7 @@ def evaluate(model: torch.nn.Module, criterion: torch.nn.Module, postprocessors,
     # accumulate predictions from all images
     if coco_evaluator is not None:
         coco_evaluator.accumulate()
-        coco_evaluator.summarize()
+        coco_evaluator.summarize() 
 
 
     # panoptic_res = None

@@ -68,7 +68,7 @@ def extract_schema(cls: type):
 
 
 
-def create(type_or_name, irfs:bool=False, lossfunc=None, **kwargs):
+def create(type_or_name, resample:bool=False, t=None, reweight:bool=False, **kwargs):
     '''
     '''
     assert type(type_or_name) in (type, str), 'create should be class or name.'
@@ -89,7 +89,7 @@ def create(type_or_name, irfs:bool=False, lossfunc=None, **kwargs):
         _cfg.update(kwargs) # TODO
         name = _cfg.pop('type')
         
-        return create(name, irfs=irfs)
+        return create(name, resample=resample, t=t)
 
 
     cls = getattr(cfg['_pymodule'], name)
@@ -120,7 +120,7 @@ def create(type_or_name, irfs:bool=False, lossfunc=None, **kwargs):
             _cfg = GLOBAL_CONFIG[_k]
             
             if isinstance(_cfg, dict):
-                cls_kwargs[k] = create(_cfg['_name'], irfs=irfs)
+                cls_kwargs[k] = create(_cfg['_name'], resample=resample, t=t)
             else:
                 cls_kwargs[k] = _cfg 
 
@@ -136,7 +136,7 @@ def create(type_or_name, irfs:bool=False, lossfunc=None, **kwargs):
             _cfg: dict = GLOBAL_CONFIG[_type]
             # _cfg_copy = copy.deepcopy(_cfg)
             _cfg.update(_k) # update 
-            cls_kwargs[k] = create(_type, irfs=irfs)
+            cls_kwargs[k] = create(_type, resample=resample, t=t)
             # _cfg.update(_cfg_copy) # resume
 
         else:
@@ -145,17 +145,18 @@ def create(type_or_name, irfs:bool=False, lossfunc=None, **kwargs):
 
     cls_kwargs = {n: cls_kwargs[n] for n in arg_names}
 
-    if lossfunc is not None:
-        # Example: check for a specific condition related to 'use_auxiliary'
-        if 'use_auxiliary' in cls_kwargs:
-            print(f"## Using auxiliary weights for loss function '{lossfunc}'")
-            cls_kwargs['use_auxiliary'] = True 
+    if reweight is not None:
+        # Example: check for a specific condition related to 'use_efl'
+        if 'use_efl' in cls_kwargs:
+            print(f"## Using auxiliary weights for loss function '{reweight}'")
+            cls_kwargs['use_efl'] = True 
     
-    if irfs:
+    if resample:
         # Example: check for a specific condition related to 'use_auxiliary'
         if 'resample' in cls_kwargs:
-            print(f"## Using irfs '{irfs}'")
+            print(f"## Using resampling '{resample}'")
             cls_kwargs['resample'] = True 
+            cls_kwargs['t'] = t
             print("## Dataset: ", cls_kwargs)
 
     return cls(**cls_kwargs)

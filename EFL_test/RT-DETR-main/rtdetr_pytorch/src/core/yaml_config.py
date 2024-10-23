@@ -25,9 +25,9 @@ class YAMLConfig(BaseConfig):
         self.log_step = cfg.get('log_step', 100)
         self.checkpoint_step = cfg.get('checkpoint_step', 1)
         self.epoches = cfg.get('epoches', -1)
-        self.lossfunc = cfg.get('lossfunc', '')
-        self.irfs = cfg.get('irfs', False)
-        # self.rebalanc = cfg.get('rebalanc', False)
+        self.reweight = cfg.get('reweight', False)
+        self.resample = cfg.get('resample', False)
+        self.t = cfg.get('t', None)
         self.resume = cfg.get('resume', '')
         self.tuning = cfg.get('tuning', '')
         self.sync_bn = cfg.get('sync_bn', False)
@@ -56,10 +56,10 @@ class YAMLConfig(BaseConfig):
 
     @property
     def criterion(self, ):
-        if self.lossfunc == 'efl':
+        if self.reweight:
             if self._criterion is None and 'criterion' in self.yaml_cfg:
                 merge_config(self.yaml_cfg)
-                self._criterion = create(self.yaml_cfg['criterion'], lossfunc=self.lossfunc)
+                self._criterion = create(self.yaml_cfg['criterion'], reweight=True)
             return self._criterion
         else:
             if self._criterion is None and 'criterion' in self.yaml_cfg:
@@ -88,10 +88,10 @@ class YAMLConfig(BaseConfig):
     
     @property
     def train_dataloader(self, ):
-        if self.irfs:
+        if self.resample:
             if self._train_dataloader is None and 'train_dataloader' in self.yaml_cfg:
                 merge_config(self.yaml_cfg)
-                self._train_dataloader = create('train_dataloader', irfs=True)
+                self._train_dataloader = create('train_dataloader', resample=True, t=self.t)
                 self._train_dataloader.shuffle = self.yaml_cfg['train_dataloader'].get('shuffle', False)
 
             return self._train_dataloader

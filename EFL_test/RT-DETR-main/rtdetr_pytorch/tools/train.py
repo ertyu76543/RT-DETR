@@ -23,9 +23,9 @@ def main(args, ) -> None:
 
     cfg = YAMLConfig(
         args.config,
-        lossfunc=args.lossfunc,
-        irfs=args.irfs,
-        # rebalanc=args.rebalanc,
+        reweight=args.reweight,
+        resample=args.resample,
+        t=args.t,
         resume=args.resume, 
         use_amp=args.amp,
         tuning=args.tuning

@@ -13,6 +13,7 @@ train_dataloader:
       type: Compose
       ops: ~
     resample: False
+    t: 0
   shuffle: True
   batch_size: 4
   num_workers: 4
